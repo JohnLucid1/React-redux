@@ -1,0 +1,32 @@
+{
+  "name": "redux_marth",
+  "private": true,
+  "version": "0.0.0",
+  "homepage": "https://johnlucid1.github.io/React-redux/",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d ./dist",
+    "predeploy": "npm run build"
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0",
+    "react": "^18.0.0",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-dom": "^18.0.0",
+    "react-redux": "^8.0.1",
+    "react-transition-group": "^4.4.2",
+    "redux": "^4.2.0",
+    "redux-persist": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-addons-css-transition-group": "^15.0.7",
+    "@types/react-dom": "^18.0.0",
+    "@types/react-transition-group": "^4.4.4",
+    "@vitejs/plugin-react": "^1.3.0",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.9"
+  }
+}

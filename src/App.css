@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.timer-controller-btn{
+    width: 40px;
+    height: 40px;
+    background: none;
+    border-color: white;
+    vertical-align: middle;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.timer-controller-btn:hover{
+    background-color: white;
+}
+
+.timer-controller-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #635994 ;
+}
+
+#reset{
+    font-weight: 900;
+}
+
+.limit-controller-button{
+    width: 3rem;
+    background:none;
+    height: 3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.limit-controller-button:hover{
+    background-color: white;
+}
+
+.limit-controller-img{
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.limit-controller-img:hover{
+    color: #1A1B26;
+}
+
+.Header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    /* vertical-align: middle; */
+}
+
+.headButtons{
+    display: inline-block;
+    vertical-align: middle;
+    /* text-align: center; */
+}
+
+html{
+    color: white;
+    background: #1A1B26
+}
+
+.another{
+    display: flex;
+    justify-content: center;
+}
+
+.App{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.app-container{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.main_tasks{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#left{
+    margin-right: 15px;
+}
+
+#right{
+    margin-left: 15px;
+}
+
+.timer-controller-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.timer-display-container{
+    padding-bottom: 20px;
+}
+
+.example-enter{
+    opacity: 0;
+}
+
+.example-enter-active{
+    opacity: 1;
+    transition: opacity 300ms ease-out;
+}
+
+.example-leave{
+    opacity: 1;
+}
+
+.example-leave-active{
+    opacity: 0;
+    transition: opacity 300ms ease-out;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+}
+
+.form__field {
+  font-family: inherit;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e, #38ef7d);
+  border-image-slice: 1;
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #11998e;
+  font-weight: 700;
+}
+
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+
+.taskStyle{
+    display: flex;
+    justify-content: space-between;
+    width: 310px;
+    padding-top: 30px;
+    border: none;
+}
+
+.ButnStyle{
+    background: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    transition: 0.3s linear;
+}
+
+.ButnStyle:hover{
+    color: white;
+    background-color: #C04E50;
+    cursor: pointer;
+    border-color: #C04E50;
+}
+
+.taskmain{
+    overflow-wrap: break-word;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    border-bottom: 2px solid grey;
+}
+
+.DelAll{
+    margin-top: 30px;
+    background: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: 0.3s linear;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.DelAll:hover{
+    cursor: pointer;
+    color: white;
+    border-color: red;
+    background-color: red;
+}
+
+.elapsed-time{
+    font-size: 1.8rem;
+}
+.headBTN{
+    background: none;
+    border: 1px solid white;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    /* font-size: 20px; */
+    border-radius: 2px;
+    margin: 0 5px;
+    transition: 0.1s linear;
+}
+
+.headBTN:hover{
+    border-bottom: 5px solid white;
+    cursor: pointer;
+}
+
+
+.Title{
+    cursor: pointer;
+}
+
+.Btns-actions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.DelBut{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Edit{
+    background: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 16px;
+    border-left: 2px solid #9b9b9b;
+}
+
